@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+  margin-top: 5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  max-width: 1000px;
+}
+
+.col {
+  border: hidden;
+  padding: 40px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.col.sedans {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.col.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.col.luxury {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.col > .column-title {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100px;
+  border: solid hsl(0, 0%, 95%);
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.btn.sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn.suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn.luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+/*ATTRIBUTION*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 800px) {
+  .card {
+    display: flex;
+    min-height: 500px;
+  }
+
+  .col.sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .col.luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+}
